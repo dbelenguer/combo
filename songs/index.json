@@ -1,0 +1,11 @@
+[
+  { "file": "like-a-prayer.csv", "title": "Like a Prayer", "key": "Dm", "bpm": 112, "density": 1.0 },
+  { "file": "cant-take-my-eyes-off-of-you.csv", "title": "Can't Take My Eyes Off Of You", "key": "G", "bpm": 130, "density": 1.0 },
+  { "file": "cover-me-with-snow.csv", "title": "Cover Me With Snow", "key": "A", "bpm": 77,  "density": 0.8 },
+  { "file": "defying-gravity.csv", "title": "Defying Gravity", "key": "Db", "bpm": 161, "density": 1.8 },
+  { "file": "beat-it.csv", "title": "Beat It", "key": "Em", "bpm": 138 },
+  { "file": "camins.csv", "title": "Camins", "key": "A", "bpm": 125, "notes": "transposed +3 semitones from F#", "density": 0.4 },
+  { "file": "que-tinguem-sort.csv", "title": "Que Tinguem Sort", "key": "Am", "bpm": 100, "density": 0.4 },
+  { "file": "example.csv", "title": "Example Song", "key": "G", "bpm": 110, "notes": "for testing" },
+  { "file": "notation-demo.csv", "title": "Notation Demo", "key": "C", "bpm": 90, "notes": "exercises all chord-row notations" }
+]

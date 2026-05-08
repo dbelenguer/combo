@@ -1,0 +1,12 @@
+section,bars,seconds,title,emoji,chords,lyrics,description
+Intro,4,,Plain + extensions,,C — Am — Dm7 — G7,,extensions render as superscript
+Verse,4,,Slash chords,,F/G — E7/G# — F#7/A# — G/A,,bass note in soft teal
+Bridge,4,,Multi-chord per bar,,Am F | C G | Em   Dm | Bb,,whitespace inside a bar = multiple chords sharing it
+Pre-chorus,4,,Syncopation,,>F — >Am — >D — G,,soft-cyan arc to upper-left
+Chorus,4,,Rhythm slashes,🥁,C — G7://////// | C://// | F://// | D7://H,,inline mini-staff per chord
+Bridge,4,,All combined,🎵,>F/G://// — Am | >C — >Bm7 — Em(maj7),,three layers stacked on one chord
+Outro,4,,Line break,,C — Am — Dm7 — G7\nF — G — Am — F,,literal \n splits chord row across lines
+Verse,4,,Repeat sign,,|: G | D | Em | C :|,,thick bar + 2 dots wrap the bars
+Verse,8,,Sequential repeats,,|: A | B :| |: C | D :|,,two repeat regions side by side
+Bridge,4,,Single-bar repeat,,|: F :|,,both marks on one bar
+Solo,8,,Wrap repeat,,|: G | D | Em | C | G :|,,5 bars wraps to second line
