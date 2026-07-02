@@ -163,6 +163,7 @@ export function createPlayback({
   function setMetronomeEnabled(enabled) {
     session.metronomeEnabled = !!enabled;
     writeStorage('metronome', enabled ? '1' : '0');
+    if (session.metronomeEnabled && metronome) metronome.prime();
     emit('change', getState());
   }
 

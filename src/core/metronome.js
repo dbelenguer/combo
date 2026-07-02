@@ -12,6 +12,7 @@ export function createMetronome() {
   let suppressed = false;
   let holdId = 0;
   let holdBeat = 0;
+  let primed = false;
 
   function ensureCtx() {
     if (!ctx) {
@@ -23,7 +24,7 @@ export function createMetronome() {
     return ctx;
   }
 
-  function click(accent) {
+  function click(accent, peak) {
     const c = ensureCtx();
     if (!c) return;
     const t = c.currentTime;
@@ -31,8 +32,9 @@ export function createMetronome() {
     const gain = c.createGain();
     osc.frequency.value = accent ? ACCENT_FREQ : BEAT_FREQ;
     osc.type = 'sine';
+    const g = peak ?? (accent ? ACCENT_GAIN : BEAT_GAIN);
     gain.gain.setValueAtTime(0, t);
-    gain.gain.linearRampToValueAtTime(accent ? ACCENT_GAIN : BEAT_GAIN, t + ATTACK);
+    gain.gain.linearRampToValueAtTime(g, t + ATTACK);
     gain.gain.exponentialRampToValueAtTime(0.0001, t + ATTACK + DECAY);
     osc.connect(gain).connect(c.destination);
     osc.start(t);
@@ -41,7 +43,12 @@ export function createMetronome() {
 
   return {
     prime() {
-      ensureCtx();
+      const c = ensureCtx();
+      if (!c || primed) return;
+      primed = true;
+      // Warm the audio graph with one inaudible tick so the first real
+      // click has no cold-start latency.
+      click(false, 0.0001);
     },
     tickAtBeat(beat) {
       click(isAccent(beat));
