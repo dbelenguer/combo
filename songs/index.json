@@ -6,6 +6,7 @@
   { "file": "beat-it.csv", "title": "Beat It", "key": "Em", "bpm": 138 },
   { "file": "camins.csv", "title": "Camins", "key": "A", "bpm": 125, "notes": "transposed +3 semitones from F#", "density": 0.4 },
   { "file": "que-tinguem-sort.csv", "title": "Que Tinguem Sort", "key": "Am", "bpm": 100, "density": 0.4 },
+  { "file": "golden.csv", "title": "Golden", "key": "Em", "bpm": 123, "notes": "Intro in 3/4, body in 4/4" },
   { "file": "example.csv", "title": "Example Song", "key": "G", "bpm": 110, "notes": "for testing" },
   { "file": "notation-demo.csv", "title": "Notation Demo", "key": "C", "bpm": 90, "notes": "exercises all chord-row notations" }
 ]

@@ -2,8 +2,8 @@ import { isAccent } from './beat-tracker.js';
 
 const ACCENT_FREQ = 1500;
 const BEAT_FREQ = 800;
-const ACCENT_GAIN = 0.4;
-const BEAT_GAIN = 0.25;
+const ACCENT_GAIN = 0.6;
+const BEAT_GAIN = 0.4;
 const ATTACK = 0.001;
 const DECAY = 0.03;
 
